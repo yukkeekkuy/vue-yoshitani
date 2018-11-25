@@ -6,8 +6,15 @@
 </template>
 
 <script>
+import Top from './components/Top'
+import Vote from './components/Vote'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Top: Top,
+    Vote: Vote
+  }
 }
 </script>
 

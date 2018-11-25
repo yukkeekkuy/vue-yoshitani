@@ -6,7 +6,33 @@
     <title>vue-yoshitani</title>
   </head>
   <body>
+    <header>
+      <div style="background-color: #0002">
+        <a href="/">トップ</a>
+      </div>
+    </header>
     <div id="app"></div>
+    <footer>
+      <div style="background-color: #0002; font-size: 8px">
+        Copyright (C) 2018 A-Class. All Rights Reserved.
+      </div>
+    </footer>
     <!-- built files will be auto injected -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDKrKrYP5IigLHWw7cph8IqKlzypulET3E",
+        authDomain: "vue-yoshitani.firebaseapp.com",
+        databaseURL: "https://vue-yoshitani.firebaseio.com",
+        projectId: "vue-yoshitani",
+        storageBucket: "vue-yoshitani.appspot.com",
+        messagingSenderId: "1093534307579"
+      };
+      firebase.initializeApp(config);
+
+      // Get a reference to the database service
+      var database = firebase.database();
+    </script>
   </body>
 </html>
